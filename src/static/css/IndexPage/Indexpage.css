@@ -1,0 +1,5 @@
+.inonerow{
+ display: flex;
+ flex-flow: row;
+ overflow: scroll;;   
+}

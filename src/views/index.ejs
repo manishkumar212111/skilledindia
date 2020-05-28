@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <% if(locals.data.title) {%><meta charset="utf-8"><title itemprop="name"><%= data.seo.title %></title>
+      <meta name="description" itemprop="description" content="<%= data.seo.pageDescription %>">
+    <%} %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintaki</title>
+    <script type="text/javascript" src="imagekit.js"></script>
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/IndexPage/Indexpage.css">
+  </head>
+  <script>
+    window.__INITIAL_STATE__ = <%- JSON.stringify(data) %>;
+  </script>
+  
+  <body>
+    <div id="main"><%- markup -%></div>
+    
+    
+    <script src="/js/bundle.js" defer>
+    </script>
+    <%if (data.chunkJs) { %><script src="/js/<%- data.chunkJs + '.bundle.js' -%>" defer></script><% } %>
+
+  </body>
+</html>
