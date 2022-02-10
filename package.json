@@ -42,7 +42,7 @@
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0",
     "imagekit-javascript": "^1.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "querystring": "^0.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
